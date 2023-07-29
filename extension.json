@@ -1,0 +1,41 @@
+{
+  "identifier": "jasonplatts.tailwindcss",
+  "name": "Tailwind CSS",
+  "organization": "Jason Platts",
+  "description": "Provides Tailwind CSS completions.",
+  "version": "2.1",
+  "license":"MIT",
+  "repository":"https://github.com/jasonplatts/tailwindcss-nova-ext",
+  "bugs":"https://github.com/jasonplatts/tailwindcss-nova-ext/issues",
+  "funding":"https://github.com/sponsors/jasonplatts",
+  "min_runtime": "2.0",
+  "categories": ["completions", "languages"],
+  
+  "main": "main.js",
+  
+  "activationEvents": [
+    "*"
+  ],
+  
+  "entitlements": {
+    "filesystem": "readonly"
+  },
+  
+  "config-workspace": [
+    {
+      "key": "tailwindcss.version.section",
+      "title": "Tailwind CSS Version",
+      "type": "section",
+      "children": [
+        {
+          "key": "tailwindcss.workspace.version",
+          "title": "Version",
+          "description": "Select the version of Tailwind CSS to be used in the current workspace.",
+          "type": "enum",
+          "values": ["2.0", "1.9"],
+          "default": "2.0"
+        }
+      ]
+    }
+  ]
+}
